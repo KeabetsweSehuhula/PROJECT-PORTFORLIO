@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Sesigo Saccos</title>
+    <meta name="description" content="Explore Sesigo Saccos' comprehensive financial services including savings accounts, loans, financial education, and member support.">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/services.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="./public/SESIGO.jpg" alt="Sesigo Saccos Logo" class="logo-img">
+                <span>Sesigo Saccos</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="./" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./about.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./services.html" class="nav-link active">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./membership.html" class="nav-link">Membership</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./testimonials.html" class="nav-link">Success Stories</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./news.html" class="nav-link">News & Tips</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Services</h1>
+            <p>Comprehensive financial solutions tailored for your success</p>
+        </div>
+    </section>
+
+    <!-- Services Navigation -->
+    <section class="services-nav">
+        <div class="container">
+            <div class="services-nav-list">
+                <a href="#savings" class="service-nav-link active">Savings Accounts</a>
+                <a href="#loans" class="service-nav-link">Loans & Credit</a>
+                <a href="#education" class="service-nav-link">Financial Education</a>
+                <a href="#support" class="service-nav-link">Member Support</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Savings Accounts -->
+    <section id="savings" class="service-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Savings Accounts</h2>
+                <p>Secure your future with our competitive savings products</p>
+            </div>
+            <div class="service-details">
+                <div class="service-content">
+                    <div class="service-info">
+                        <h3>Why Choose Our Savings Accounts?</h3>
+                        <ul class="service-benefits">
+                            <li><i class="fas fa-check"></i> Competitive interest rates up to 8% per annum</li>
+                            <li><i class="fas fa-check"></i> No monthly maintenance fees</li>
+                            <li><i class="fas fa-check"></i> Flexible withdrawal options</li>
+                            <li><i class="fas fa-check"></i> Mobile banking access</li>
+                            <li><i class="fas fa-check"></i> Insurance protection up to P100,000</li>
+                        </ul>
+                    </div>
+                    <div class="service-calculator">
+                        <h4>Savings Calculator</h4>
+                        <form class="calculator-form" id="savingsCalculator">
+                            <div class="calc-input">
+                                <label>Initial Deposit (P)</label>
+                                <input type="number" id="initialDeposit" value="1000" min="100">
+                            </div>
+                            <div class="calc-input">
+                                <label>Monthly Savings (P)</label>
+                                <input type="number" id="monthlySavings" value="500" min="50">
+                            </div>
+                            <div class="calc-input">
+                                <label>Time Period (Years)</label>
+                                <input type="number" id="timePeriod" value="5" min="1" max="30">
+                            </div>
+                            <div class="calc-input">
+                                <label>Interest Rate (%)</label>
+                                <input type="number" id="interestRate" value="8" min="1" max="15" step="0.1">
+                            </div>
+                            <button type="button" onclick="calculateSavings()" class="btn btn-primary">Calculate</button>
+                        </form>
+                        <div class="calc-result" id="savingsResult">
+                            <p>Your projected savings: <span class="result-amount">P0</span></p>
+                            <p>Total interest earned: <span class="result-interest">P0</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-products">
+                    <div class="product-card">
+                        <h4>Regular Savings</h4>
+                        <div class="product-rate">6.5% APY</div>
+                        <ul class="product-features">
+                            <li>Minimum deposit: P100</li>
+                            <li>Unlimited deposits</li>
+                            <li>6 free withdrawals monthly</li>
+                            <li>Mobile & online banking</li>
+                        </ul>
+                        <a href="./membership.html" class="btn btn-outline">Apply Now</a>
+                    </div>
+                    <div class="product-card featured">
+                        <div class="popular-badge">Most Popular</div>
+                        <h4>High-Yield Savings</h4>
+                        <div class="product-rate">8.0% APY</div>
+                        <ul class="product-features">
+                            <li>Minimum deposit: P1,000</li>
+                            <li>Higher interest rates</li>
+                            <li>Quarterly bonus interest</li>
+                            <li>Priority customer support</li>
+                        </ul>
+                        <a href="./membership.html" class="btn btn-primary">Apply Now</a>
+                    </div>
+                    <div class="product-card">
+                        <h4>Youth Savings</h4>
+                        <div class="product-rate">7.0% APY</div>
+                        <ul class="product-features">
+                            <li>Ages 16-25 eligible</li>
+                            <li>Minimum deposit: P50</li>
+                            <li>Financial literacy program</li>
+                            <li>No monthly fees</li>
+                        </ul>
+                        <a href="./membership.html" class="btn btn-outline">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Loans & Credit -->
+    <section id="loans" class="service-section alt-bg">
+        <div class="container">
+            <div class="section-header">
+                <h2>Loans & Credit</h2>
+                <p>Access affordable financing for your personal and business needs</p>
+            </div>
+            <div class="service-details">
+                <div class="service-content">
+                    <div class="service-info">
+                        <h3>Loan Benefits</h3>
+                        <ul class="service-benefits">
+                            <li><i class="fas fa-check"></i> Competitive interest rates starting from 12%</li>
+                            <li><i class="fas fa-check"></i> Flexible repayment terms up to 60 months</li>
+                            <li><i class="fas fa-check"></i> Quick approval process (24-48 hours)</li>
+                            <li><i class="fas fa-check"></i> No hidden fees or charges</li>
+                            <li><i class="fas fa-check"></i> Loan protection insurance included</li>
+                        </ul>
+                    </div>
+                    <div class="service-calculator">
+                        <h4>Loan Calculator</h4>
+                        <form class="calculator-form" id="loanCalculator">
+                            <div class="calc-input">
+                                <label>Loan Amount (P)</label>
+                                <input type="number" id="loanAmount" value="50000" min="1000">
+                            </div>
+                            <div class="calc-input">
+                                <label>Interest Rate (%)</label>
+                                <input type="number" id="loanRate" value="15" min="10" max="25" step="0.1">
+                            </div>
+                            <div class="calc-input">
+                                <label>Loan Term (Months)</label>
+                                <input type="number" id="loanTerm" value="36" min="6" max="60">
+                            </div>
+                            <button type="button" onclick="calculateLoan()" class="btn btn-primary">Calculate</button>
+                        </form>
+                        <div class="calc-result" id="loanResult">
+                            <p>Monthly Payment: <span class="result-payment">P0</span></p>
+                            <p>Total Interest: <span class="result-total-interest">P0</span></p>
+                            <p>Total Amount: <span class="result-total-amount">P0</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-products">
+                    <div class="product-card">
+                        <h4>Personal Loans</h4>
+                        <div class="product-rate">From 12%</div>
+                        <ul class="product-features">
+                            <li>Up to P100,000</li>
+                            <li>No collateral required</li>
+                            <li>Quick approval</li>
+                            <li>Flexible terms</li>
+                        </ul>
+                        <a href="./contact.html" class="btn btn-outline">Apply Now</a>
+                    </div>
+                    <div class="product-card">
+                        <h4>Business Loans</h4>
+                        <div class="product-rate">From 14%</div>
+                        <ul class="product-features">
+                            <li>Up to P500,000</li>
+                            <li>Working capital support</li>
+                            <li>Equipment financing</li>
+                            <li>Business mentorship</li>
+                        </ul>
+                        <a href="./contact.html" class="btn btn-outline">Apply Now</a>
+                    </div>
+                    <div class="product-card">
+                        <h4>Emergency Loans</h4>
+                        <div class="product-rate">From 10%</div>
+                        <ul class="product-features">
+                            <li>Up to P25,000</li>
+                            <li>Same-day approval</li>
+                            <li>Medical emergencies</li>
+                            <li>Short-term repayment</li>
+                        </ul>
+                        <a href="./contact.html" class="btn btn-outline">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Financial Education -->
+    <section id="education" class="service-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Financial Education</h2>
+                <p>Build your financial knowledge and skills for a better future</p>
+            </div>
+            <div class="education-content">
+                <div class="education-programs">
+                    <div class="program-card">
+                        <div class="program-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>Basic Financial Literacy</h4>
+                        <p>Learn fundamental concepts of budgeting, saving, and financial planning.</p>
+                        <div class="program-details">
+                            <span><i class="fas fa-clock"></i> 4 weeks</span>
+                            <span><i class="fas fa-users"></i> 20 participants</span>
+                            <span><i class="fas fa-calendar"></i> Monthly</span>
+                        </div>
+                        <a href="./contact.html" class="btn btn-outline">Enroll Now</a>
+                    </div>
+                    <div class="program-card">
+                        <div class="program-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h4>Business Development</h4>
+                        <p>Comprehensive training for aspiring entrepreneurs and small business owners.</p>
+                        <div class="program-details">
+                            <span><i class="fas fa-clock"></i> 6 weeks</span>
+                            <span><i class="fas fa-users"></i> 15 participants</span>
+                            <span><i class="fas fa-calendar"></i> Quarterly</span>
+                        </div>
+                        <a href="./contact.html" class="btn btn-outline">Enroll Now</a>
+                    </div>
+                    <div class="program-card">
+                        <div class="program-icon">
+                            <i class="fas fa-piggy-bank"></i>
+                        </div>
+                        <h4>Investment Planning</h4>
+                        <p>Advanced strategies for building wealth through smart investment choices.</p>
+                        <div class="program-details">
+                            <span><i class="fas fa-clock"></i> 8 weeks</span>
+                            <span><i class="fas fa-users"></i> 10 participants</span>
+                            <span><i class="fas fa-calendar"></i> Bi-annually</span>
+                        </div>
+                        <a href="./contact.html" class="btn btn-outline">Enroll Now</a>
+                    </div>
+                    <div class="program-card">
+                        <div class="program-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h4>Home Ownership</h4>
+                        <p>Everything you need to know about buying your first home and mortgages.</p>
+                        <div class="program-details">
+                            <span><i class="fas fa-clock"></i> 3 weeks</span>
+                            <span><i class="fas fa-users"></i> 25 participants</span>
+                            <span><i class="fas fa-calendar"></i> Monthly</span>
+                        </div>
+                        <a href="./contact.html" class="btn btn-outline">Enroll Now</a>
+                    </div>
+                </div>
+                <div class="education-resources">
+                    <h3>Free Resources</h3>
+                    <div class="resource-list">
+                        <a href="#" class="resource-item">
+                            <i class="fas fa-file-pdf"></i>
+                            <span>Budgeting Guide for Beginners</span>
+                            <i class="fas fa-download"></i>
+                        </a>
+                        <a href="#" class="resource-item">
+                            <i class="fas fa-file-pdf"></i>
+                            <span>Small Business Financial Planning</span>
+                            <i class="fas fa-download"></i>
+                        </a>
+                        <a href="#" class="resource-item">
+                            <i class="fas fa-file-pdf"></i>
+                            <span>Investment Basics in Botswana</span>
+                            <i class="fas fa-download"></i>
+                        </a>
+                        <a href="#" class="resource-item">
+                            <i class="fas fa-file-pdf"></i>
+                            <span>Understanding Credit Scores</span>
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Member Support -->
+    <section id="support" class="service-section alt-bg">
+        <div class="container">
+            <div class="section-header">
+                <h2>Member Support</h2>
+                <p>Dedicated assistance whenever you need it</p>
+            </div>
+            <div class="support-content">
+                <div class="support-channels">
+                    <div class="support-card">
+                        <div class="support-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h4>Phone Support</h4>
+                        <p>Speak directly with our customer service team</p>
+                        <div class="support-details">
+                            <p><strong>+267 123 4567</strong></p>
+                            <p>Mon-Fri: 8:00 AM - 5:00 PM</p>
+                            <p>Sat: 8:00 AM - 1:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="support-card">
+                        <div class="support-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h4>Live Chat</h4>
+                        <p>Get instant help through our website chat</p>
+                        <div class="support-details">
+                            <p>Available 24/7</p>
+                            <p>Average response: 2 minutes</p>
+                            <button class="btn btn-primary" onclick="startLiveChat()">Start Chat</button>
+                        </div>
+                    </div>
+                    <div class="support-card">
+                        <div class="support-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4>Email Support</h4>
+                        <p>Send us your questions and concerns</p>
+                        <div class="support-details">
+                            <p><strong>support@sesigosaccos.bw</strong></p>
+                            <p>Response within 24 hours</p>
+                            <a href="./contact.html" class="btn btn-outline">Send Email</a>
+                        </div>
+                    </div>
+                    <div class="support-card">
+                        <div class="support-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h4>Branch Visits</h4>
+                        <p>Visit us at our main office in Gaborone</p>
+                        <div class="support-details">
+                            <p>Plot 123, Main Mall</p>
+                            <p>Gaborone, Botswana</p>
+                            <a href="./contact.html" class="btn btn-outline">Get Directions</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-section">
+                    <h3>Frequently Asked Questions</h3>
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h5>How do I become a member of Sesigo Saccos?</h5>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>To become a member, you need to complete our membership application form, provide required documents (ID, proof of income, proof of residence), and make an initial deposit of P100. The process typically takes 2-3 business days.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h5>What are the loan requirements?</h5>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Loan requirements include: being a member for at least 3 months, having a steady income, providing pay slips for the last 3 months, and having guarantors for larger loans. Specific requirements vary by loan type.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h5>How can I access my account online?</h5>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>You can access your account through our mobile app or website using your member number and PIN. If you haven't registered for online banking, visit our branch or contact customer service to set it up.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h5>What happens if I miss a loan payment?</h5>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>We understand that financial difficulties can arise. Contact us immediately if you anticipate missing a payment. We offer flexible payment arrangements and can discuss restructuring options to help you stay on track.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h3>Ready to Get Started?</h3>
+                <p>Join thousands of satisfied members who trust Sesigo Saccos with their financial future.</p>
+                <div class="cta-buttons">
+                    <a href="./membership.html" class="btn btn-primary">Apply for Membership</a>
+                    <a href="./contact.html" class="btn btn-outline">Contact Us Today</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="./public/SESIGO.jpg" alt="Sesigo Saccos Logo" class="footer-logo-img">
+                        <span>Sesigo Saccos</span>
+                    </div>
+                    <p>Empowering Botswana through financial unity and community-driven growth.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./services.html">Services</a></li>
+                        <li><a href="./membership.html">Membership</a></li>
+                        <li><a href="./testimonials.html">Success Stories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="./services.html#savings">Savings Accounts</a></li>
+                        <li><a href="./services.html#loans">Loans & Credit</a></li>
+                        <li><a href="./services.html#education">Financial Education</a></li>
+                        <li><a href="./services.html#support">Member Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Gaborone, Botswana</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+267 123 4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@sesigosaccos.bw</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sesigo Saccos. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/services.js"></script>
+</body>
+</html>

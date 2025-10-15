@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Financial Tips - Sesigo Saccos</title>
+    <meta name="description" content="Stay updated with the latest financial news, tips, and insights from Sesigo Saccos to help you make informed financial decisions.">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/news.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="./public/SESIGO.jpg" alt="Sesigo Saccos Logo" class="logo-img">
+                <span>Sesigo Saccos</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="./" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./about.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./membership.html" class="nav-link">Membership</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./testimonials.html" class="nav-link">Success Stories</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./news.html" class="nav-link active">News & Tips</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>News & Financial Tips</h1>
+            <p>Stay informed with the latest updates and expert financial guidance</p>
+        </div>
+    </section>
+
+    <!-- Search and Filter -->
+    <section class="search-filter">
+        <div class="container">
+            <div class="search-controls">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Search articles...">
+                </div>
+                <div class="filter-controls">
+                    <select id="categoryFilter">
+                        <option value="all">All Categories</option>
+                        <option value="tips">Financial Tips</option>
+                        <option value="news">Company News</option>
+                        <option value="market">Market Updates</option>
+                        <option value="education">Financial Education</option>
+                        <option value="products">Product Updates</option>
+                    </select>
+                    <select id="dateFilter">
+                        <option value="all">All Time</option>
+                        <option value="week">This Week</option>
+                        <option value="month">This Month</option>
+                        <option value="quarter">This Quarter</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="featured-article">
+        <div class="container">
+            <article class="featured-content" id="article-1">
+                <div class="featured-text">
+                    <div class="article-meta">
+                        <span class="article-category">Financial Tips</span>
+                        <span class="article-date">January 15, 2025</span>
+                    </div>
+                    <h2>Smart Saving Strategies for 2025: Building Wealth in Botswana's Growing Economy</h2>
+                    <p class="article-excerpt">As Botswana's economy continues to diversify and grow, there are numerous opportunities for individuals and families to build wealth through smart saving strategies. This comprehensive guide explores proven methods to maximize your savings potential...</p>
+                    <div class="article-content">
+                        <h3>Why Saving Matters More Than Ever</h3>
+                        <p>In today's economic landscape, having a solid savings foundation is crucial for financial security and taking advantage of investment opportunities. With inflation rates and changing market conditions, traditional saving methods may not be enough.</p>
+                        
+                        <h3>Top Saving Strategies for 2025</h3>
+                        <div class="strategy-list">
+                            <div class="strategy-item">
+                                <h4>1. Automated Savings Plans</h4>
+                                <p>Set up automatic transfers to your savings account immediately after receiving your salary. This "pay yourself first" approach ensures consistent saving habits.</p>
+                            </div>
+                            <div class="strategy-item">
+                                <h4>2. High-Yield Savings Accounts</h4>
+                                <p>Choose savings accounts that offer competitive interest rates. Sesigo Saccos' High-Yield Savings offers up to 8% APY, significantly higher than traditional banks.</p>
+                            </div>
+                            <div class="strategy-item">
+                                <h4>3. Emergency Fund Priority</h4>
+                                <p>Build an emergency fund covering 3-6 months of expenses before focusing on other savings goals. This provides financial security and peace of mind.</p>
+                            </div>
+                            <div class="strategy-item">
+                                <h4>4. Goal-Based Savings</h4>
+                                <p>Create separate savings accounts for different goals: home down payment, children's education, vacation, etc. This helps maintain focus and motivation.</p>
+                            </div>
+                        </div>
+
+                        <h3>Leveraging Technology for Better Savings</h3>
+                        <p>Modern banking technology offers powerful tools to enhance your saving efforts. Mobile banking apps can provide spending insights, automatic round-ups, and goal tracking features.</p>
+
+                        <h3>Tax-Efficient Saving in Botswana</h3>
+                        <p>Understanding Botswana's tax implications for different types of savings can help maximize your returns. Consult with our financial advisors to optimize your savings strategy.</p>
+                    </div>
+                    <div class="article-tags">
+                        <span class="tag">Savings</span>
+                        <span class="tag">Financial Planning</span>
+                        <span class="tag">Wealth Building</span>
+                        <span class="tag">Botswana Economy</span>
+                    </div>
+                    <div class="article-actions">
+                        <button class="btn btn-outline" onclick="shareArticle('Smart Saving Strategies for 2025')">Share Article</button>
+                        <button class="btn btn-primary" onclick="contactAdvisor()">Speak with Advisor</button>
+                    </div>
+                </div>
+                <div class="featured-image">
+                    <div class="article-visual">
+                        <i class="fas fa-chart-line"></i>
+                        <div class="visual-stats">
+                            <span class="stat">8% APY</span>
+                            <span class="label">High-Yield Savings</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- News Grid -->
+    <section class="news-grid">
+        <div class="container">
+            <div class="section-header">
+                <h2>Latest Articles</h2>
+                <p>Fresh insights and updates from our financial experts</p>
+            </div>
+            <div class="articles-grid" id="articlesGrid">
+                <!-- Article 2 -->
+                <article class="article-card" data-category="news" data-date="2025-01-10" id="article-2">
+                    <div class="article-image">
+                        <i class="fas fa-home"></i>
+                        <div class="article-category-badge">Company News</div>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-date">January 10, 2025</span>
+                            <span class="read-time">3 min read</span>
+                        </div>
+                        <h3>New Home Loan Products Launched with Competitive Rates</h3>
+                        <p>We're excited to announce the launch of our enhanced home loan products designed to make homeownership more accessible for Botswana residents. Features include reduced down payments, flexible terms, and competitive interest rates starting from 12% APY...</p>
+                        <div class="article-highlights">
+                            <span class="highlight">✓ Rates from 12% APY</span>
+                            <span class="highlight">✓ 5% Down Payment</span>
+                            <span class="highlight">✓ Up to 30-year terms</span>
+                        </div>
+                        <a href="#" onclick="expandArticle('article-2')" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="article-card" data-category="news" data-date="2025-01-05" id="article-3">
+                    <div class="article-image">
+                        <i class="fas fa-award"></i>
+                        <div class="article-category-badge">Company News</div>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-date">January 5, 2025</span>
+                            <span class="read-time">2 min read</span>
+                        </div>
+                        <h3>Sesigo Saccos Receives Excellence Award for Community Impact</h3>
+                        <p>We are honored to receive the Financial Cooperative Excellence Award from the Botswana Cooperative Association for our outstanding contribution to community development and financial inclusion initiatives...</p>
+                        <div class="article-highlights">
+                            <span class="highlight">🏆 Excellence Award Winner</span>
+                            <span class="highlight">🤝 Community Impact Recognition</span>
+                        </div>
+                        <a href="#" onclick="expandArticle('article-3')" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 4 -->
+                <article class="article-card" data-category="tips" data-date="2025-01-03">
+                    <div class="article-image">
+                        <i class="fas fa-calculator"></i>
+                        <div class="article-category-badge">Financial Tips</div>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-date">January 3, 2025</span>
+                            <span class="read-time">5 min read</span>
+                        </div>
+                        <h3>Budgeting Basics: How to Take Control of Your Finances</h3>
+                        <p>Master the fundamentals of budgeting with our step-by-step guide. Learn how to track expenses, set realistic financial goals, and build a budget that works for your lifestyle...</p>
+                        <div class="article-highlights">
+                            <span class="highlight">📊 Budgeting Templates</span>
+                            <span class="highlight">💡 Practical Tips</span>
+                            <span class="highlight">🎯 Goal Setting</span>
+                        </div>
+                        <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 5 -->
+                <article class="article-card" data-category="market" data-date="2024-12-28">
+                    <div class="article-image">
+                        <i class="fas fa-globe-africa"></i>
+                        <div class="article-category-badge">Market Updates</div>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-date">December 28, 2024</span>
+                            <span class="read-time">4 min read</span>
+                        </div>
+                        <h3>Botswana's Economic Outlook 2025: Opportunities for Savers</h3>
+                        <p>As Botswana's economy shows strong growth indicators, discover the opportunities this presents for individual savers and investors. Our economic analysis covers key sectors and their implications for personal finance...</p>
+                        <div class="article-highlights">
+                            <span class="highlight">📈 Growth Projections</span>
+                            <span class="highlight">💰 Investment Opportunities</span>
+                        </div>
+                        <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 6 -->
+                <article class="article-card" data-category="education" data-date="2024-12-22">
+                    <div class="article-image">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div class="article-category-badge">Financial Education</div>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-date">December 22, 2024</span>
+                            <span class="read-time">6 min read</span>
+                        </div>
+                        <h3>Understanding Credit Scores: Your Key to Better Loan Terms</h3>
+                        <p>Learn how credit scores work in Botswana, what factors affect your score, and practical steps to improve your creditworthiness for better loan terms and financial opportunities...</p>
+                        <div class="article-highlights">
+                            <span class="highlight">🔍 Credit Score Factors</span>
+                            <span class="highlight">📋 Improvement Strategies</span>
+                            <span class="highlight">💳 Better Loan Terms</span>
+                        </div>
+                        <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 7 -->
+                <article class="article-card" data-category="products" data-date="2024-12-18">
+                    <div class="article-image">
+                        <i class="fas fa-mobile-alt"></i>
+                        <div class="article-category-badge">Product Updates</div>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-date">December 18, 2024</span>
+                            <span class="read-time">3 min read</span>
+                        </div>
+                        <h3>New Mobile Banking Features: Banking Made Even Easier</h3>
+                        <p>Discover the latest features added to our mobile banking app, including biometric login, instant transfers, spending analytics, and goal-based savings trackers...</p>
+                        <div class="article-highlights">
+                            <span class="highlight">📱 Enhanced Security</span>
+                            <span class="highlight">⚡ Instant Transfers</span>
+                            <span class="highlight">📊 Spending Analytics</span>
+                        </div>
+                        <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 8 -->
+                <article class="article-card" data-category="tips" data-date="2024-12-15">
+                    <div class="article-image">
+                        <i class="fas fa-piggy-bank"></i>
+                        <div class="article-category-badge">Financial Tips</div>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-date">December 15, 2024</span>
+                            <span class="read-time">4 min read</span>
+                        </div>
+                        <h3>Holiday Spending: How to Enjoy the Season Without Breaking the Bank</h3>
+                        <p>Practical strategies for managing holiday expenses while staying within budget. Learn how to plan for gifts, travel, and entertainment without compromising your financial goals...</p>
+                        <div class="article-highlights">
+                            <span class="highlight">🎁 Gift Planning</span>
+                            <span class="highlight">💰 Budget Management</span>
+                            <span class="highlight">🎯 Goal Preservation</span>
+                        </div>
+                        <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 9 -->
+                <article class="article-card" data-category="education" data-date="2024-12-10">
+                    <div class="article-image">
+                        <i class="fas fa-chart-pie"></i>
+                        <div class="article-category-badge">Financial Education</div>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span class="article-date">December 10, 2024</span>
+                            <span class="read-time">7 min read</span>
+                        </div>
+                        <h3>Investment Basics for Beginners: Growing Your Wealth Safely</h3>
+                        <p>A comprehensive introduction to investment principles, risk management, and building a diversified portfolio suitable for Botswana residents. Start your investment journey with confidence...</p>
+                        <div class="article-highlights">
+                            <span class="highlight">📈 Investment Principles</span>
+                            <span class="highlight">⚖️ Risk Management</span>
+                            <span class="highlight">🛡️ Portfolio Diversification</span>
+                        </div>
+                        <a href="#" class="read-more">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="load-more-container">
+                <button class="btn btn-outline" id="loadMoreBtn">Load More Articles</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter-signup">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h3>Never Miss a Financial Update</h3>
+                    <p>Subscribe to our weekly newsletter and get the latest financial tips, news, and exclusive member benefits delivered to your inbox.</p>
+                    <div class="newsletter-benefits">
+                        <div class="benefit">
+                            <i class="fas fa-envelope"></i>
+                            <span>Weekly financial insights</span>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-star"></i>
+                            <span>Exclusive member offers</span>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-bell"></i>
+                            <span>Product updates first</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="newsletter-form">
+                    <form id="newsSubscriptionForm">
+                        <div class="form-group">
+                            <input type="email" id="newsEmail" placeholder="Enter your email address" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="newsTopics">
+                                <option value="all">All Topics</option>
+                                <option value="tips">Financial Tips</option>
+                                <option value="products">Product Updates</option>
+                                <option value="market">Market News</option>
+                                <option value="education">Educational Content</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Subscribe Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h3>Need Personalized Financial Advice?</h3>
+                <p>Our financial experts are here to help you navigate your unique financial journey with tailored guidance.</p>
+                <div class="cta-buttons">
+                    <a href="./contact.html" class="btn btn-primary">Schedule Consultation</a>
+                    <a href="./services.html#education" class="btn btn-outline">Join Our Programs</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="./public/SESIGO.jpg" alt="Sesigo Saccos Logo" class="footer-logo-img">
+                        <span>Sesigo Saccos</span>
+                    </div>
+                    <p>Empowering Botswana through financial unity and community-driven growth.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./services.html">Services</a></li>
+                        <li><a href="./membership.html">Membership</a></li>
+                        <li><a href="./testimonials.html">Success Stories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="./services.html#savings">Savings Accounts</a></li>
+                        <li><a href="./services.html#loans">Loans & Credit</a></li>
+                        <li><a href="./services.html#education">Financial Education</a></li>
+                        <li><a href="./services.html#support">Member Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Gaborone, Botswana</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+267 123 4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@sesigosaccos.bw</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sesigo Saccos. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/news.js"></script>
+</body>
+</html>

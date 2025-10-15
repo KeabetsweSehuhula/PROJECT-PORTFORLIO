@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Sesigo Saccos</title>
+    <meta name="description" content="Get in touch with Sesigo Saccos. Visit our Gaborone office, call us, or send a message. We're here to help with all your financial needs.">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="./public/SESIGO.jpg" alt="Sesigo Saccos Logo" class="logo-img">
+                <span>Sesigo Saccos</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="./" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./about.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./membership.html" class="nav-link">Membership</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./testimonials.html" class="nav-link">Success Stories</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./news.html" class="nav-link">News & Tips</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./contact.html" class="nav-link active">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Sesigo Saccos</h1>
+            <p>We're here to help with all your financial needs</p>
+        </div>
+    </section>
+
+    <!-- Contact Options -->
+    <section class="contact-options">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Visit Our Office</h3>
+                    <div class="contact-details">
+                        <p><strong>Main Branch</strong></p>
+                        <p>Plot 123, Main Mall<br>Gaborone, Botswana</p>
+                        <div class="contact-hours">
+                            <h4>Business Hours:</h4>
+                            <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
+                            <p>Saturday: 8:00 AM - 1:00 PM</p>
+                            <p>Sunday: Closed</p>
+                        </div>
+                    </div>
+                    <button class="btn btn-outline" onclick="openMap()">Get Directions</button>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <div class="contact-details">
+                        <div class="phone-numbers">
+                            <div class="phone-item">
+                                <span class="phone-label">Main Line:</span>
+                                <a href="tel:+2671234567" class="phone-number">+267 123 4567</a>
+                            </div>
+                            <div class="phone-item">
+                                <span class="phone-label">Loans Department:</span>
+                                <a href="tel:+2671234568" class="phone-number">+267 123 4568</a>
+                            </div>
+                            <div class="phone-item">
+                                <span class="phone-label">Member Services:</span>
+                                <a href="tel:+2671234569" class="phone-number">+267 123 4569</a>
+                            </div>
+                        </div>
+                        <div class="contact-hours">
+                            <h4>Call Center Hours:</h4>
+                            <p>Monday - Friday: 7:00 AM - 6:00 PM</p>
+                            <p>Saturday: 8:00 AM - 2:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <div class="contact-details">
+                        <div class="email-addresses">
+                            <div class="email-item">
+                                <span class="email-label">General Inquiries:</span>
+                                <a href="mailto:info@sesigosaccos.bw" class="email-address">info@sesigosaccos.bw</a>
+                            </div>
+                            <div class="email-item">
+                                <span class="email-label">Membership:</span>
+                                <a href="mailto:membership@sesigosaccos.bw" class="email-address">membership@sesigosaccos.bw</a>
+                            </div>
+                            <div class="email-item">
+                                <span class="email-label">Loan Applications:</span>
+                                <a href="mailto:loans@sesigosaccos.bw" class="email-address">loans@sesigosaccos.bw</a>
+                            </div>
+                            <div class="email-item">
+                                <span class="email-label">Customer Support:</span>
+                                <a href="mailto:support@sesigosaccos.bw" class="email-address">support@sesigosaccos.bw</a>
+                            </div>
+                        </div>
+                        <p class="response-time">We typically respond within 24 hours</p>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Live Chat</h3>
+                    <div class="contact-details">
+                        <p>Get instant support through our website chat feature. Our customer service team is ready to assist you with:</p>
+                        <ul class="chat-services">
+                            <li>Account inquiries</li>
+                            <li>Product information</li>
+                            <li>Application status</li>
+                            <li>Technical support</li>
+                        </ul>
+                        <p class="chat-hours">Available: Monday - Friday, 8:00 AM - 5:00 PM</p>
+                    </div>
+                    <button class="btn btn-primary" onclick="startLiveChat()">Start Live Chat</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-form-container">
+                <div class="form-header">
+                    <h2>Send Us a Message</h2>
+                    <p>Fill out the form below and we'll get back to you as soon as possible</p>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="membership">Membership Inquiry</option>
+                            <option value="loans">Loan Application</option>
+                            <option value="savings">Savings Account</option>
+                            <option value="support">Customer Support</option>
+                            <option value="complaint">Complaint</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="memberNumber">Member Number (if applicable)</label>
+                        <input type="text" id="memberNumber" name="memberNumber">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Please provide details about your inquiry..." required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="contactConsent" name="contactConsent" required>
+                            <span class="checkmark"></span>
+                            I consent to being contacted by Sesigo Saccos regarding my inquiry *
+                        </label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="marketingConsent" name="marketingConsent">
+                            <span class="checkmark"></span>
+                            I would like to receive marketing communications and updates
+                        </label>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-outline" onclick="clearForm()">Clear Form</button>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Find Us on the Map</h2>
+                <p>Located in the heart of Gaborone for easy access</p>
+            </div>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>Interactive Map</h3>
+                    <p>Plot 123, Main Mall<br>Gaborone, Botswana</p>
+                    <div class="map-features">
+                        <div class="feature">
+                            <i class="fas fa-car"></i>
+                            <span>Parking Available</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-bus"></i>
+                            <span>Public Transport Nearby</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-wheelchair"></i>
+                            <span>Wheelchair Accessible</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" onclick="openMap()">View in Google Maps</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Quick answers to common questions</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>What are your operating hours?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our main branch is open Monday to Friday from 8:00 AM to 5:00 PM, and Saturday from 8:00 AM to 1:00 PM. Our call center operates Monday to Friday from 7:00 AM to 6:00 PM, and Saturday from 8:00 AM to 2:00 PM. We're closed on Sundays and public holidays.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>How quickly can I expect a response to my inquiry?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We strive to respond to all inquiries promptly. Email inquiries are typically answered within 24 hours during business days. Phone calls are answered immediately during operating hours. Live chat responses are usually within 2-3 minutes.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Can I visit your office without an appointment?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, you can visit our office during business hours without an appointment. However, for loan applications, membership consultations, or complex inquiries, we recommend scheduling an appointment to ensure you receive dedicated time with our specialists.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>What documents should I bring for my visit?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>For membership applications, bring your ID, proof of income, and proof of residence. For loan applications, additional documents may be required including pay slips, bank statements, and collateral information. Contact us beforehand to confirm specific requirements for your situation.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Do you offer services in languages other than English?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, our staff is multilingual and can assist you in Setswana, English, and other local languages. If you prefer to communicate in a specific language, please let us know when you contact us or visit our office.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>How can I file a complaint or provide feedback?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We welcome your feedback and take all complaints seriously. You can file a complaint through our contact form, by calling our customer service line, or by visiting our office in person. We will investigate all complaints promptly and provide you with a resolution within 5 business days.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media -->
+    <section class="social-media-section">
+        <div class="container">
+            <div class="social-content">
+                <h2>Connect With Us</h2>
+                <p>Follow us on social media for the latest updates, financial tips, and community news</p>
+                <div class="social-links-large">
+                    <a href="#" class="social-link-large facebook">
+                        <i class="fab fa-facebook-f"></i>
+                        <div class="social-info">
+                            <h4>Facebook</h4>
+                            <p>Daily tips & updates</p>
+                        </div>
+                    </a>
+                    <a href="#" class="social-link-large twitter">
+                        <i class="fab fa-twitter"></i>
+                        <div class="social-info">
+                            <h4>Twitter</h4>
+                            <p>Latest news & insights</p>
+                        </div>
+                    </a>
+                    <a href="#" class="social-link-large instagram">
+                        <i class="fab fa-instagram"></i>
+                        <div class="social-info">
+                            <h4>Instagram</h4>
+                            <p>Community stories</p>
+                        </div>
+                    </a>
+                    <a href="#" class="social-link-large linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                        <div class="social-info">
+                            <h4>LinkedIn</h4>
+                            <p>Professional insights</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="./public/SESIGO.jpg" alt="Sesigo Saccos Logo" class="footer-logo-img">
+                        <span>Sesigo Saccos</span>
+                    </div>
+                    <p>Empowering Botswana through financial unity and community-driven growth.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./services.html">Services</a></li>
+                        <li><a href="./membership.html">Membership</a></li>
+                        <li><a href="./testimonials.html">Success Stories</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="./services.html#savings">Savings Accounts</a></li>
+                        <li><a href="./services.html#loans">Loans & Credit</a></li>
+                        <li><a href="./services.html#education">Financial Education</a></li>
+                        <li><a href="./services.html#support">Member Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Gaborone, Botswana</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+267 123 4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@sesigosaccos.bw</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sesigo Saccos. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/contact.js"></script>
+</body>
+</html>
